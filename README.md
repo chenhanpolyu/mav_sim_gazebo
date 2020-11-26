@@ -56,6 +56,8 @@ export GAZEBO_RESOURCE_PATH=$GAZEBO_RESOURCE_PATH:~/YOUR_WORK_SPACE/src/mav_sim_
 export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/YOUR_WORK_SPACE/src/mav_sim_gazebo/gazebo/models
 export GAZEBO_PLUGIN_PATH=$GAZEBO_PLUGIN_PATH:~/YOUR_WORK_SPACE/devel/lib
 ````
+Please pay attention, if you HAVE ANY OTHER GAZEBO_* PATH in your ~/.bashrc file before, please comment(delete) them in advance, or the paths may collide and gazebo may crash once you spawn the UAV model in the simulation world.
+
 Using keyboard to control the MAV in simulator
 ````
 roslaunch mav_sim_gazebo keyboard_ctr.launch
